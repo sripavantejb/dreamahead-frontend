@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Primary #16214a for buttons, card accents, icons. Text on primary bg uses primary-foreground (white). */
+    --background: 210 33% 97.6%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 227 54% 19%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 25% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 227 54% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 227 54% 19%;
+
+    --radius: 0.75rem;
+    --radius-card: 1rem;
+
+    /* Custom gradients (#16214a family) */
+    --gradient-primary: linear-gradient(135deg, hsl(227 54% 19%) 0%, hsl(227 54% 35%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(227 54% 19%) 0%, hsl(227 54% 35%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.9) 0%, hsl(227 54% 19% / 0.04) 100%);
+
+    /* Premium layered shadows for cards and buttons */
+    --shadow-card: 0 1px 3px rgb(0 0 0 / 0.04), 0 6px 16px -4px rgb(0 0 0 / 0.06);
+    --shadow-card-hover: 0 4px 12px -2px rgb(0 0 0 / 0.06), 0 12px 28px -8px rgb(0 0 0 / 0.08);
+    --shadow-button: 0 1px 2px rgb(0 0 0 / 0.04), 0 4px 12px -2px hsl(227 54% 19% / 0.25);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --nav-height: 4rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 227 54% 19%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 227 54% 19%;
+  }
+
+  .dark {
+    --background: 222 30% 11%;
+    --foreground: 210 25% 96%;
+
+    --card: 222 30% 14%;
+    --card-foreground: 210 25% 96%;
+
+    --popover: 222 30% 14%;
+    --popover-foreground: 210 25% 96%;
+
+    --primary: 227 54% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 30% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 217 28% 18%;
+    --muted-foreground: 215 18% 65%;
+
+    --accent: 227 54% 40%;
+    --accent-foreground: 210 25% 96%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 25% 20%;
+    --input: 217 25% 20%;
+    --ring: 227 54% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 227 54% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 227 54% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+html,
+body {
+  @apply bg-background text-foreground;
+  font-family: 'Inter', 'Satoshi', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Mobile-first typography - Satoshi with tight headings */
+@media (max-width: 640px) {
+  h1 {
+    @apply text-2xl font-bold tracking-tight;
+  }
+  
+  h2 {
+    @apply text-xl font-semibold tracking-tight;
+  }
+  
+  h3 {
+    @apply text-lg font-semibold tracking-tight;
+  }
+  
+  p, .body-text {
+    @apply text-sm leading-relaxed;
+  }
+  
+  button {
+    @apply text-base;
+  }
+}
+
+@media (min-width: 641px) {
+  h1 {
+    @apply text-4xl font-bold tracking-tight;
+  }
+  
+  h2 {
+    @apply text-3xl font-semibold tracking-tight;
+  }
+  
+  h3 {
+    @apply text-xl font-semibold tracking-tight;
+  }
+}
+}
