@@ -90,7 +90,7 @@ const AdminPanel = () => {
     <div className="flex flex-col h-full bg-card">
       <div className="p-6 border-b">
         <h2 className="text-2xl font-bold text-primary">Admin Panel</h2>
-        <p className="text-sm text-muted-foreground mt-1">College Companion Hub</p>
+        <p className="text-sm text-muted-foreground mt-1">Dream Ahead</p>
       </div>
       
       <nav className="flex-1 p-4 space-y-2">

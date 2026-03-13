@@ -1,6 +1,6 @@
 # Security Setup Guide
 
-This document outlines the security configuration and setup steps for College Companion.
+This document outlines the security configuration and setup steps for Dream Ahead.
 
 **Note:** Supabase has been removed from this project. References to Supabase RPC, auth, or storage below are for reference only; auth and data are handled by the backend API (MongoDB).
 

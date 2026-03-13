@@ -86,7 +86,7 @@ export function HeroLeadForm() {
             Apply Now
           </h3>
           <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-            Start your journey with College Companion Hub.
+            Start your journey with Dream Ahead.
           </p>
         </div>
         <Form {...form}>

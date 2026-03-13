@@ -151,7 +151,7 @@ const Index = () => {
                   </GradientText>
                 </h1>
                 <p className="text-sm min-[380px]:text-base md:text-lg text-muted-foreground max-w-2xl lg:max-w-none leading-relaxed break-words" style={{ animationDelay: "0.1s" }}>
-                  Join 50,000+ students using College Companion Hub to explore the right courses,
+                  Join 50,000+ students using Dream Ahead to explore the right courses,
                   understand admission possibilities, track scholarships, and stay organized — all in one place.
                 </p>
               </div>

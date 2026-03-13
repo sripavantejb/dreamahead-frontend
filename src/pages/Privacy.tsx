@@ -16,7 +16,7 @@ const Privacy = () => {
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">2. How We Use Your Information</h2>
             <p className="text-muted-foreground mb-4">
-              We use the information we collect to provide, maintain, and improve our services, to communicate with you, and to protect College Companion Hub and our users.
+              We use the information we collect to provide, maintain, and improve our services, to communicate with you, and to protect Dream Ahead and our users.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">3. Information Sharing</h2>

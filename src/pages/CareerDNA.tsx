@@ -404,7 +404,7 @@ const CareerDNA = () => {
                   <Dna className="h-6 w-6" />
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">College Companion Hub</p>
+                  <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Dream Ahead</p>
                   <p className="font-semibold text-lg">Career DNA Report</p>
                 </div>
               </div>

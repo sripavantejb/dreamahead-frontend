@@ -47,7 +47,7 @@ export const Footer = () => {
               Empowering students with data, clarity, and guidance.
             </p>
             <p className="text-sm text-primary-foreground/90 leading-relaxed">
-              College Companion Hub helps students across India navigate college admissions with confidence — from predictions to scholarships to deadlines.
+              Dream Ahead helps students across India navigate college admissions with confidence — from predictions to scholarships to deadlines.
             </p>
           </div>
 
@@ -145,7 +145,7 @@ export const Footer = () => {
                   Empowering students with data, clarity, and guidance.
                 </p>
                 <p className="text-sm text-primary-foreground/90 leading-relaxed">
-                  College Companion Hub helps students across India navigate college admissions with confidence.
+                  Dream Ahead helps students across India navigate college admissions with confidence.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -242,7 +242,7 @@ export const Footer = () => {
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <div className="text-primary-foreground/80">
-              © {currentYear} College Companion Hub. All rights reserved.
+              © {currentYear} Dream Ahead. All rights reserved.
             </div>
             <div className="font-medium text-primary-foreground">
               Built by expert mentors and trusted by students across India.
