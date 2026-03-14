@@ -185,7 +185,7 @@ const OptionCard = ({
 const CareerDNA = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
-  const { isAnonymous, user } = useAuth();
+  const { isAnonymous, user, isLoading: authLoading } = useAuth();
   const reportRef = useRef<HTMLDivElement>(null);
   const [showIntro, setShowIntro] = useState(true);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -193,6 +193,7 @@ const CareerDNA = () => {
   const [result, setResult] = useState<CareerDNAReport | null>(null);
 
   const handleStart = () => {
+    if (authLoading) return;
     if (!requireLogin(isAnonymous, navigate, toast, "/career-dna")) return;
     setShowIntro(false);
   };

@@ -2,7 +2,7 @@
 
 This document outlines the security configuration and setup steps for Dream Ahead.
 
-**Note:** Supabase has been removed from this project. References to Supabase RPC, auth, or storage below are for reference only; auth and data are handled by the backend API (MongoDB).
+**Note:** The app uses Supabase for the Course Fit Test and CMS features. Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` in `frontend/.env`. Auth and core user data are also handled by the backend API (MongoDB).
 
 ## ✅ Implemented Security Features
 
