@@ -177,7 +177,7 @@ const Index = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  onClick={() => window.open("https://wa.me/919999999999", "_blank")}
+                  onClick={() => window.open("https://whatsapp.com/channel/0029Vb6w2rx6hENtYkixHc1B", "_blank")}
                   className="group text-base sm:text-lg px-6 sm:px-8 rounded-xl min-h-12 sm:min-h-11 border-2 border-border hover:border-primary/30 hover:bg-primary/5 text-foreground transition-all duration-300 w-full sm:w-auto"
                 >
                   <MessageCircle className="mr-2 h-5 w-5 shrink-0 text-primary" />

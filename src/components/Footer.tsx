@@ -97,7 +97,7 @@ export const Footer = () => {
                 variant="secondary"
                 size="sm"
                 className="w-full justify-start gap-2 bg-primary-foreground/10 text-primary-foreground border border-primary-foreground/30 hover:bg-primary-foreground/20"
-                onClick={() => window.open("https://wa.me/919999999999", "_blank")}
+                onClick={() => window.open("https://whatsapp.com/channel/0029Vb6w2rx6hENtYkixHc1B", "_blank")}
               >
                 <MessageCircle className="h-4 w-4" />
                 Join WhatsApp
@@ -198,7 +198,7 @@ export const Footer = () => {
                     variant="secondary"
                     size="sm"
                     className="w-full justify-start gap-2 bg-primary-foreground/10 text-primary-foreground border border-primary-foreground/30 hover:bg-primary-foreground/20"
-                    onClick={() => window.open("https://wa.me/919999999999", "_blank")}
+                    onClick={() => window.open("https://whatsapp.com/channel/0029Vb6w2rx6hENtYkixHc1B", "_blank")}
                   >
                     <MessageCircle className="h-4 w-4" />
                     Join WhatsApp
