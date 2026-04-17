@@ -96,6 +96,9 @@ export const signupSchema = z.object({
   email: emailSchema,
   phone: phoneSchema,
   password: z.string().min(6, "Password must be at least 6 characters"),
+  consent: z.literal(true, {
+    errorMap: () => ({ message: "Please agree to receive calls, emails, and SMS." }),
+  }),
 });
 
 export type SignupSchema = z.infer<typeof signupSchema>;

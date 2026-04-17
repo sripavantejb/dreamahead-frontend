@@ -6,6 +6,7 @@ import { authApi } from "@/lib/authApi";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
   FormControl,
@@ -24,7 +25,7 @@ const Signup = () => {
 
   const form = useForm<SignupSchema>({
     resolver: zodResolver(signupSchema),
-    defaultValues: { full_name: "", email: "", phone: "", password: "" },
+    defaultValues: { full_name: "", email: "", phone: "", password: "", consent: false },
     mode: "onTouched",
   });
 
@@ -120,6 +121,31 @@ const Signup = () => {
                           {...field}
                         />
                       </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="consent"
+                  render={({ field }) => (
+                    <FormItem className="space-y-2">
+                      <div className="flex items-start gap-2">
+                        <FormControl>
+                          <Checkbox
+                            id="signup-consent"
+                            className="rounded-none"
+                            checked={field.value}
+                            onCheckedChange={(checked) => field.onChange(checked === true)}
+                          />
+                        </FormControl>
+                        <FormLabel
+                          htmlFor="signup-consent"
+                          className="text-xs sm:text-sm leading-snug font-normal cursor-pointer"
+                        >
+                          I agree to receive calls, emails, and SMS regarding offers and updates.
+                        </FormLabel>
+                      </div>
                       <FormMessage />
                     </FormItem>
                   )}
