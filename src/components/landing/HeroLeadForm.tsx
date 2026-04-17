@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
   FormControl,
@@ -23,7 +24,7 @@ export function HeroLeadForm() {
 
   const form = useForm<HeroLeadFormSchema>({
     resolver: zodResolver(heroLeadFormSchema),
-    defaultValues: { name: "", mobile: "", email: "" },
+    defaultValues: { name: "", mobile: "", email: "", consent: false },
     mode: "onTouched",
   });
 
@@ -126,6 +127,31 @@ export function HeroLeadForm() {
                   <FormControl>
                     <Input type="email" placeholder="Enter your email" autoComplete="email" {...field} />
                   </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="consent"
+              render={({ field }) => (
+                <FormItem className="space-y-2">
+                  <div className="flex items-start gap-2">
+                    <FormControl>
+                      <Checkbox
+                        checked={field.value}
+                        onCheckedChange={(checked) => field.onChange(checked === true)}
+                        id="hero-form-consent"
+                        className="rounded-none"
+                      />
+                    </FormControl>
+                    <FormLabel
+                      htmlFor="hero-form-consent"
+                      className="text-xs sm:text-sm leading-snug font-normal cursor-pointer"
+                    >
+                      I agree to receive calls, emails, and SMS regarding offers and updates.
+                    </FormLabel>
+                  </div>
                   <FormMessage />
                 </FormItem>
               )}

@@ -112,6 +112,9 @@ export const heroLeadFormSchema = z.object({
   name: z.string().trim().min(2, "Name must be at least 2 characters").max(100, "Name must be less than 100 characters"),
   mobile: phoneSchema,
   email: emailSchema,
+  consent: z.literal(true, {
+    errorMap: () => ({ message: "Please agree to receive calls, emails, and SMS." }),
+  }),
 });
 
 export type HeroLeadFormSchema = z.infer<typeof heroLeadFormSchema>;
